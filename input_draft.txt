@@ -1,0 +1,39 @@
+### Question
+Contains technology in a context showing an effect
+„Does pair programming in professional software development teams increases code quality?“
+
+_________________________
+
+### Hypothesis
+Needs to contain a prediction and needs to be testable
+„If you do x, then y will happen.“
+
+_________________________
+
+### Experiment
+	## Context
+
+	## Dependent Variables
+	Variables that are measured during the study.
+
+	## Independent Variables
+	Variables that are changed during the study.
+
+	## Method
+	Lab-/Field study, number of participants, metrics, …
+
+	## Results
+	Experiment’s outcome
+	No interpretation or conclusion!
+
+_________________________
+
+### Conclusion
+Interpretation of experiment’s results.
+Verifying or Falsifying Hypothesis.
+Scope of generalization.
+	
+_________________________
+
+### Links/References
+Tags?
