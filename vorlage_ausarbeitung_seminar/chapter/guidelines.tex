@@ -3,7 +3,10 @@
 
 \newcommand{\obsrvQuote}[1]{\textit{``#1''} }
 
+
 \section{Our Approach/Guidelines}
+
+\subsection{Setting up our design guidelines}
 
 The checklist (TODO name?) is meant to implicitly guide the user's approach to experimenting.
 By guiding the user, typical mistakes might be prevented.
@@ -49,7 +52,88 @@ The first set of guidelines is based on the report of Rainer et al. \cite{Rainer
 	problems researchers commonly investigate.} (p. 8)
 	& Scientific and practical evidence can have very different requirements regarding content and other
 	aspects such as duration of evaluation. To limit this paper's scope, we focus on scientific evidence. \\ \hline
-
-	
 	\end{tabular}
 \end{center}
+
+\newpage
+\subsection{Workflow}
+% Picture's style
+\tikzstyle{decision} = [diamond, draw, fill=gray!20, text width=4.5em, text badly centered, inner sep=0pt]
+\tikzstyle{evidence} = [ellipse, draw, fill=red!20,  minimum width=25em, minimum height=4em, text badly centered, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=gray!20, text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+
+
+\begin{tikzpicture}[node distance = 3cm, auto]
+	\node [block] (hypothesis) {Create Hypothesis};
+	\node [block, right of = hypothesis] (research) {Search for existing evidence};
+	\node [decision, right of = research] (enough) {Enough evidence?};
+	\node [block, right of = enough] (experiment) {Experiment};
+	\node [evidence, below of = enough] (evidence) {Evidence Pool};
+	\node [block, right of = experiment] (evaluate) {Evaluate};
+
+
+	\path [line] (hypothesis) -- (research);
+	\path [line] (research) -- (enough);
+	\path [line] (enough) -- node {no}  (experiment) ;
+	\path [line] (enough.north)  -| node [near start] {yes} (evaluate.north);
+	\path [line] (experiment) edge [bend left] (enough);
+
+	
+	\path [line, dashed, color=red] (research) edge [bend right] node {grows} (evidence);
+	\path [line, dashed, color=red] (experiment) -- node {grows}  (evidence);
+	\path [line, dashed, color=red] (evidence) edge [bend right] (evaluate);
+\end{tikzpicture}
+
+TODO:\\
+Add numbers to each node, explain each node\\
+Missing node: "Make Decision" at the end?\\
+Layout/Style/Color
+
+
+\newcommand{\exampleQuote}[1]{\small{\textit{``#1''}}}
+
+\subsection{Checklist}
+
+{\large\textbf{Question}}\\
+Contains \textbf{\textit{technology}} in a \textbf{\textit{context}} showing an \textbf{\textit{effect}}. TODO Kitchenham Quote (practitioners)?\\
+\exampleQuote{Does pair programming in professional software development teams increases code quality?}
+\\
+\\
+\\
+{\large\textbf{Hypothesis}}\\
+Needs to contain a \textbf{\textit{prediction}} and needs to be \textbf{\textit{testable}}.\\
+\exampleQuote{If you do x, then y will happen}
+\\
+\\
+\\
+{\large\textbf{Experiment}}\\
+\textbf{Context}\\
+\\
+\textbf{Dependent Variables}\\
+Variables that are  \textbf{\textit{measured}} during the study.\\
+\\
+\textbf{Independent Variables}\\
+Variables that are  \textbf{\textit{changed}} during the study.\\
+\\
+\textbf{Method}\\
+Lab-/Field study, number of participants, metrics, ...\\
+\\
+\textbf{Results}\\
+Experiment's outcome\\
+\textbf{No} interpretation or conclusion!\\
+\\
+\\
+\\
+{\large\textbf{Conclusion}}\\
+Interpretation of experiment's results.\\
+Verifying or Falsifying Hypothesis.\\
+Scope of generalization.
+
+
+
+
+
+
+
+
