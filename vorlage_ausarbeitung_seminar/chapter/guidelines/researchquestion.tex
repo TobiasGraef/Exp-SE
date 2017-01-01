@@ -1,18 +1,46 @@
 \subsubsection{Research Question}
 
 The question the later study is designed to answer is called research question \cite{Vickers}. It should be an answerable question and address a relevant issue in the research area \cite{Dyba2005}. Preceding a research question is the need for a deep understanding of the topics that have already been studied, in order to produce questions which drive knowledge further. The questions that arise during the acquisition of knowledge, and cannot be answered by means of EBSE, are likely appropriate questions for further research \cite{Farrugia2009}. \newline
-There are two general classes of research questions: qualitative and quantitative questions. Qualitative research states questions which report, describe, or explore a subject \cite[p. 139-141]{Creswell2014}. In computer science as the research field matures these questions become more and more rare {\color{red} (find source)}. Therefore focus is on quantitative research questions in this paper. \newline
+There are two general classes of research questions: qualitative and quantitative questions. Qualitative research states questions which report, describe, or explore a subject \cite[p. 139-141]{Creswell2014}. In computer science as the research field matures these questions become more and more rare {\color{red} (find source)}. Therefore focus is on quantitative research questions in this paper. \obsrvQuote{Quantitative research questions inquire about the relationships among variables} \cite[p. 143]{Creswell2014}, and from them emerge quantitative hypotheses. \newline
 To understand the structure of research questions Shaw provides a model where she categorizes research questions from software engineering papers in five types \cite{Shaw2002} {\color{red} (maybe cut out)}. \newline
+To design a good research question Haynes coined the acronym PICO: Population, Intervention, Comparison group, and Outcome \cite{BrianHaynes2006}. Sometimes Time is added as fifth component, when it is important over what time frame the study is conducted, see Table \ref{table:PICOT}. A research question structured with the PICOT approach supports in restricting the research question and steers thereby hypotheses and study. By restricting the research question researchers can limit bias and increase the internal validity of the study, but a too narrow question may also lead to decreased external validity \cite{Farrugia2009}. Before PICOT Sackett and colleagues suggested that good research questions consist out of three components: Intervention, Context and Outcome \cite{Sackett2000}, which is a more coarse grained decomposition than PICOT. Dyb{\aa} \emph{et al.} displayed a fitting example for this template in software engineering: \obsrvQuote{Does pair programming lead to improved code quality when practiced by professional software developers?} \cite[p. 60]{Dyba2005} Here the intervention is pair programming, the context of interest are professional software developers, and the outcome is improved code quality \cite{Dyba2005}. To verify the quality of a freshly designed research question Hulley \emph{et al.} suggest the use of the FINER criteria. It highlights key aspects of the question and provides thereby new angles to view the proposed study from. The FINER criteria consists of: Feasible, Interesting, Novel, Ethical, and Relevant \cite{Farrugia2009}. A more detailed view of the FINER criteria can be seen in Table \ref{table:FINER}.   
+
+\begin{table}[]
+	\centering
+	\caption{FINER criteria for a good research question \cite{Farrugia2009}}
+	\label{table:FINER}
+	\begin{tabular}{ p{3em} p{6em} p{22em} }
+			\textbf{F}	& Feasible & \tabitem Adequate number of subjects \\
+			\multicolumn{2}{l}{} & \tabitem Adequate technical expertise \\
+			\multicolumn{2}{l}{} & \tabitem Affordable in time and money \\
+			\multicolumn{2}{l}{} & \tabitem Manageable in scope \vspace{1em}\\
+			\textbf{I}	& Interesting & \tabitem Getting the answer intrigues investigator, peers and community \vspace{1em}\\
+
+			\textbf{N}	& Novel & \tabitem Confirms, refutes or extends previous findings \vspace{1em}\\
+
+			\textbf{E}	& Ethical & \tabitem Amendable to a study that institutional review board will approve \vspace{1em}\\ 
+			\textbf{R}	& Relevant & \tabitem To scientific knowledge \\
+			\multicolumn{2}{l}{} & \tabitem To clinical and health policy \\
+			\multicolumn{2}{l}{} & \tabitem To future research
+	\end{tabular}	
+\end{table}
 
 
-\begin{itemize}
-	\item How to research question:
-		\begin{itemize}
-			\item FINER \& PICOT  {\color{red} (Farrugia et al.)}
-			\item Intervention/Contect/Effect  {\color{red} (Kitchenham et al. 2005)}
-			\item Research Design Book  {\color{red} (Creswell)}
-		\end{itemize}
-\end{itemize}
+\begin{table}[]
+	\centering
+	\caption{PICOT criteria adjusted to fit better in computer science research.}
+	\label{table:PICOT}
+	\begin{tabular}{ p{3em} p{6.5em} p{22em} }
+		\textbf{P}	& Population & \tabitem What specific patient population are you interested in? \vspace{1em}\\
+		
+		\textbf{I}	& Intervention (technology) & \tabitem What is the investigational technology/ intervention? \vspace{1em}\\
+		
+		\textbf{C}	& Comparison group & \tabitem What is the main alternative/baseline to compare with the intervention \vspace{1em}\\ 
+		
+		\textbf{O}	& Outcome & \tabitem What do you intend to accomplish, measure, improve or affect? \vspace{1em}\\ 
+		\textbf{T}	& Time & \tabitem What is the appropriate follow-up time to assess outcome? 
+	\end{tabular}
+\end{table}
 
 
 
