@@ -1,29 +1,39 @@
+% !TEX root = ../../seminar.tex
 % Picture's style
 \tikzstyle{decision} = [diamond, draw, fill=gray!20, text width=4.5em, text badly centered, inner sep=0pt]
-\tikzstyle{evidence} = [ellipse, draw, fill=red!20,  minimum width=25em, minimum height=4em, text badly centered, inner sep=0pt]
+\tikzstyle{evidence} = [ellipse, draw, fill=red!20,  minimum width=20em, minimum height=4em, text badly centered, inner sep=0pt]
+\tikzstyle{evidence_global} = [ellipse, draw, fill=green!20,  minimum width=40em, minimum height=10em, text badly centered, inner sep=0pt]
 \tikzstyle{block} = [rectangle, draw, fill=gray!20, text width=5em, text centered, rounded corners, minimum height=4em]
 \tikzstyle{line} = [draw, -latex']
 
 
 \begin{tikzpicture}[node distance = 3cm, auto]
-	\node [block] (hypothesis) {Create Hypothesis};
+	\node [block] (hypothesis) {Formulate Hypothesis/Question};
 	\node [block, right of = hypothesis] (research) {Search for existing evidence};
-	\node [decision, right of = research] (enough) {Enough evidence?};
+	\node [decision, right of = research] (enough) {substantial evidence?};
+	\node [evidence_global, below of = enough, node distance = 4cm] (evidence_global) {Evidence Pool};
 	\node [block, right of = enough] (experiment) {Experiment};
-	\node [evidence, below of = enough] (evidence) {Evidence Pool};
-	\node [block, right of = experiment] (evaluate) {Evaluate};
+	\node [evidence, below of = enough] (evidence_personal) {Personal Evidence Pool};
+	\node [block, right of = experiment] (answer) {Answer Question};
+
+
 
 
 	\path [line] (hypothesis) -- (research);
 	\path [line] (research) -- (enough);
 	\path [line] (enough) -- node {no}  (experiment) ;
-	\path [line] (enough.north)  -| node [near start] {yes} (evaluate.north);
+	\path [line] (enough.north)  -| node [near start] {yes} (answer);
 	\path [line] (experiment) edge [bend left] (enough);
 
 	
-	\path [line, dashed, color=red] (research) edge [bend right] node {grows} (evidence);
-	\path [line, dashed, color=red] (experiment) -- node {grows}  (evidence);
-	\path [line, dashed, color=red] (evidence) edge [bend right] (evaluate);
+	\path [line, dashed, color=red] (research) edge [bend right] node {grows} (evidence_personal);
+	\path [line, dashed, color=red] (experiment) -- node {grows}  (evidence_personal);
+	\path [line, dashed, color=red] (evidence_personal.east) edge [bend left] (answer.south);
+	\path [line, dashed, color=red] (answer.south) edge [bend left] (evidence_personal.east);
+
+	
+	\path [line, color=green] (evidence_global) edge  [bend left] ([xshift=-0.5cm]research.south);
+	
 \end{tikzpicture}
 
 TODO:\\
