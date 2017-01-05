@@ -11,7 +11,7 @@
 
 
 \begin{tikzpicture}[node distance = 3cm, auto]
-	\node [block] (hypothesis) {Formulate Hypothesis/Question};
+	\node [block] (hypothesis) {Formulate Question / Hypothesis};
 	\node [block, right of = hypothesis] (research) {Search for existing evidence};
 	\node [decision, right of = research] (enough) {substantial evidence?};
 	\node [evidence_global, below of = enough, node distance = 4cm] (evidence_global) {Evidence Pool};
