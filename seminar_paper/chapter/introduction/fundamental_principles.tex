@@ -1,26 +1,29 @@
 \subsection{Fundamental Principles}
 
-short introduction to EBSE,..
+\todo{short introduction to EBSE,...}
+\newline
+In 2004 evidence-based software engineering (EBSE) was proposed as an adoption of the evidence-based approach in medicine \cite{EBSE}. The aim of EBSE is \q{to improve decision making related to software development and maintenance by integrating current best evidence from research with practical experience and human values} \cite{Dyba2005}. Practising EBSE includes five steps:
+\begin{enumerate}
+	\item Ask an answerable question.
+	\item Find the best evidence that answers that question.
+	\item Critically appraise this evidence.
+	\item Apply the evidence (and critical appraisal).
+	\item Evaluate the performance in previous steps.
+\end{enumerate}
+Formulating the question precisely is important for the success of the process. The question should be formulated broad enough, so important studies are not missed, but must be precise enough to cope with the amount of studies (see section \todo{3.2.1}).
 
-\begin{itemize}
-	\item adopted from medicine (EBM), starting point: decisions in SE often not based on evidence for suitability, quality.., thus increasing the risk of poor decisions \red{in motivation?}
-	\item \textbf{Evidence-based approach}: integrate all available research (evidence) in decision making process
-	\item \textbf{Aim}: \q{EBSE aims to improve decision making related to software development and maintenance by integrating current best evidence from research with practical experience and human values.} \cite{Dyba2005}
-	\item \textbf{Five steps} of practising EBSE \cite{EBSE}:
-		\begin{enumerate}
-			\item Ask an answerable question.
-			\item Find the best evidence that answers that question.
-			\item Critically appraise this evidence.
-			\item Apply the evidence (and critical appraisal).
-			\item Evaluate the performance in previous steps.
-		\end{enumerate}
-		$\rightarrow$ important tool: Systematic Literature Review (SLR)
-	\item \textbf{SLR} \cite{keele2007}: identify and interpret all available literature regarding a research question
-		$\rightarrow$ papers should be written for synthesis \red{(TODO requirements for this, common mistakes/problems?)}
-	\item Problems inherent to SE\cite{EBSE}:
-		\begin{enumerate}
-			\item Skill factor: performing SE methods and techniques often require skilled practitioners. This prevents blinding and can therefor cause problems related to subect and experimenter bias. (2 approaches to reduce these effects in \cite{EBSE})
-			\item lifecycle issue: prediction of behaviour (long time?) of deployed technology difficult, hard to isolate efffects because of interaction with other methods/technologies (also 2 approaches to cope with these effects in \cite{EBSE})
-		\end{enumerate}
-		\item Step 2: SLR in SE: lack of systematic reviews \red{(still correct? source?)}, lack of replication studies \red{(source?)}, problems regarding SLR \red{TODO}
-\end{itemize}
+In medicine researcher heavily rely on already published \emph{systematic literature reviews} (SLR) to find relevant studies. SLRs try to identify and interpret all available literature regarding a specific research question \cite{keele2007}. There are several organisation dedicated to conduct such reviews in medicine. The lack of this infrastructure makes applying the evidence-based approach in software engineering more difficult.
+\todo{problems with SLRs? abstracts, papers should be written for synthesis,requirements for this, common mistakes/problems?}
+
+Kitchenham et al. \cite{EBSE} also identify two major problems inherent to software engineering:
+\begin{enumerate}
+\item The skill factor: Performing software engineering methods and techniques often require skilled practitioners. This prevents blinding and can therefore cause problems related to subect and experimenter bias.
+\item The lifecycle issue: Prediction of behaviour \todo{long time?} of deployed technology is difficult and it is hard to isolate efffects because of interaction with other methods and technologies.
+\end{enumerate}
+
+\todo{2 approaches to reduce each of these effects in \cite{EBSE}}
+\newline
+
+\todo{SLR in SE: lack of systematic reviews \red{(still correct? source?)}, lack of replication studies \red{(source?)}, problems regarding SLR \red{TODO}
+\newline
+\q{Identifying relevant studies in software engineering}, Zhang et al 2010}
