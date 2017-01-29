@@ -1,0 +1,38 @@
+TODO
+
+Introduction
+	Motivation [Text]
+		Motivation /Search Methods [Content] Reason for Briefing Form
+	
+	
+		
+Fundamental Principles [TODOs]
+	Ebse
+	Research cycle
+	Structured Abstract [TODOs]
+	
+Related Work (Graph, other guidelines) [Content]
+
+	
+Workflow Checklist
+	Motivation
+	Graphic Redo (Same style as cheecklist)
+	Research Question [TODOs]
+	Seach For Existing Evidence [Content]
+	Experiment [Text]
+	AnswerQuestion [Content]
+	Discussion [Text/content]
+	Evalaute Process [Text/content]
+
+Briefing Form
+	Remove Paper Graphic
+	Motivation
+	Explanations [TODOs]
+		Statistical Results [Text]
+		Conclusion [Text]
+
+Discussion [Content]
+	
+- Title
+- Abstract
+- Keywords
