@@ -50,7 +50,7 @@
 }
 
 \newcommand{\sembib}[1]{%
-\bibliographystyle{splncs03}%
+%\bibliographystyle{splncs03}%
 \bibliography{#1}%
 }
 
