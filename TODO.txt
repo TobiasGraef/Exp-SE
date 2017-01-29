@@ -1,10 +1,7 @@
 TODO
 
 Introduction
-	Motivation [Text]
-		Motivation /Search Methods [Content] Reason for Briefing Form
-	
-	
+	Motivation [TODOs]
 		
 Fundamental Principles [TODOs]
 	Ebse
