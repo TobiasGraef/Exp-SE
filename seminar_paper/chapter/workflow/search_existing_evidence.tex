@@ -1,29 +1,31 @@
 \subsection{Search for Existing Evidence}
 \label{subsec:search for existing evidence} 
 
-After formulating a research question it is important to know which scientific results exist that help answer this question.
+After formulating a research question it is important to know which scientific results exist that help answer this question. Students normally perform an \q{ad-hoc} literature review that is prone to missing evidence and getting biased results (experimenter bias).
 
-EBSE proposes the use of systematic literature reviews (SLR)to search for studies related to the research question. The aim of SLRs is to \q{identify, assess and combine the evidence from primary research studies using an explicit and rigorous method} \cite{Zhang2011}. Using this well-defined methods might prevent biased results of the literature review, but requires more effort (both in time and skills) than traditional literature reviews. There exist guidelines \cite{keele2007,Wohlin2014,Zhang2011} \todo{cite EBSE guidelines?} and reports of experiences with conducting SLRs \cite{Brereton2007} that provide the means necessary to conduct a SLR.
-In any case published SLRs are very useful, even if conducting one is not feasible, as they provide a summary of multiple studies concerning one research question. Currently there are at least two projects concerned with making SLRs and finding relevant studies easier by collecting and indexing them \todo{ref SEED and Software Engineering Evidence Map}, but both have not been updated recently \todo{(SEED: prototype, 2009; Ev Map 2012)}.
+For that reason EBSE proposes the use of \emph{systematic literature reviews} (SLR), a type of secondary study, to search for studies related to the research question. The aim of SLRs is to \q{identify, assess and combine the evidence from primary research studies using an explicit and rigorous method} \cite{Zhang2011}. Using this well-defined method might prevent biased results of the literature review, but requires more effort (both in time and skill) than traditional literature reviews. There exist guidelines \cite{keele2007,Wohlin2014,Zhang2011} \todo{cite EBSE guidelines?} and reports of experiences with conducting SLRs \cite{Brereton2007} that provide the means necessary to conduct a SLR.
 
-\todo{sth like "no SLR => search should still be as structured as possible"?}
-\newline
-The search strategy depends on the research question. If the research domain provides a vast amount of studies the search can \todo{should, must?} be restricted, for example the exclusion of older studies \cite{Brereton2007}.
+In any case published SLRs are very useful, even if conducting one is not feasible, as they provide a summary of multiple studies concerning one research question. Currently there are at least two projects concerned with making SLRs and finding relevant studies easier by collecting and indexing them \todo{ref SEED and Software Engineering Evidence Map}, but both have not been updated recently \todo{(SEED: prototype, 2009; Ev Map 2012)}. \todo{more disadv?}
 
-\todo{fill the gap?}
-\newline
-Even for more experienced students it might be necessary to refine the research question based on the search result, because their understanding of the research domain increases. For example having only a few search result can be caused by research questions that are too narrow. Research Questions that are too general can lead to an abundance of search result that would take too long to examine \todo{or can't be handled?}. 
+Students voted for the SLR conducted during the EBSE process as one of the hardest steps \cite{keele2007}. Therefore we suggest a less formal search process to save time and effort. But it should be noted, that the search should still be planned and structured to get the desired result\todo{state it?}. If it is possible conducting a SLR is always preferable.
 \newline
 \newline
-in form of study: SLR. use existing ones, or even conduct yourself? (time consuming, no easy task)
-\newline
-$\rightarrow$ database like SEED useful
-\newline
+Several guidelines from SLRs are still useful\todo{rephrase}:
+\begin{itemize}
+\item Think about your search strings and engines beforehand and write them down.
+\item It is unlikely to find all relevant literature using only a single search engine \cite{Brereton2007}. \todo{how good is Google Scholar today?, GS as good starting point (publisher bias)?}
+\item \emph{Snowballing} is useful, both in a forward and backward manner \cite{Wohlin2014}.
+
+\emph{Backward}-snowballing refers to looking at the references of a publication an therefore going back in time. This can be done by using the \q{cited by} functionality of Google Scholar.
+
+\emph{Forward}-snowballing means going forward in time by looking at the papers citing the current paper.
+\item The search strategy depends on the research question. If the research domain provides a vast amount of studies the search can \todo{should, must?} be restricted, for example the exclusion of older studies \cite{Brereton2007}.
+\item Even for more experienced students it might be necessary to refine the research question based on the search result, because their understanding of the research domain increases \cite{Brereton2007}. For example having only a few search result can be caused by research questions that are too narrow. Research Questions that are too general can lead to an abundance of search result that would take too long to examine \todo{or can't be handled?}. 
+\item Categorize your research question using classification systems like the ACM Computing Classification System and search within these categories. This is especially helpful if it is problematic to limit the scope within the research area or there are uncertainties about wording and naming\todo{rephrase}
+\end{itemize} 
+
+\todo{
 mention? systematic mapping studies (broader, but not as deep as SLRs (deep: quantitative analysis and quality assessment))
 \q{Systematic Mapping Studies in
 Software Engineering}, Petersen et al. 2008
-\begin{itemize} 
-	\item hints:
-	\item use google scholar ("wrapper" for IEEExplore, ACM ...?) $\rightarrow$forward / backward search
-	\item use categories (e.g. CCS), especially if not sure about wording / boundaries of topic, 
-\end{itemize}
+}
