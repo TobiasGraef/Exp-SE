@@ -5,6 +5,9 @@
 \newcommand{\red}[1]{{\color{red}#1}}
 \newcommand{\todo}[1]{\red{TODO: #1}}
 
+\def\boxitem#1{\setbox0=\vbox{#1}{\centering\makebox[0pt]{%
+  \fboxrule=2pt\color{red}\fbox{\hspace{\leftmargini}\color{black}\box0}}\par}}
+
 
 \newcommand{\checklist}{Checklist}
 \newcommand{\briefingform}{Briefing Form}
