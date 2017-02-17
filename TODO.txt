@@ -8,14 +8,14 @@ Introduction
 		
 Fundamental Principles [TODOs]
 	TODO: Introducing Text
-	Ebse
-	Research cycle
-	Structured Abstract [TODOs]
+	SoftTODO: Ebse 
+	SoftTODO: Structured Abstract
 	
 Related Work (Graph, other guidelines) [Content]
-
+	TODO: break up table
 	
 Workflow Checklist
+	TODO: Research cycle
 	Motivation
 	Graphic Redo (Same style as cheecklist)
 	Research Question [TODOs]
