@@ -1,9 +1,13 @@
 TODO
 
+ToC 
+	Design, Ignore Header
+
 Introduction
-	Motivation [TODOs]
+	Motivation [Text, SoftTodos]
 		
 Fundamental Principles [TODOs]
+	TODO: Introducing Text
 	Ebse
 	Research cycle
 	Structured Abstract [TODOs]
