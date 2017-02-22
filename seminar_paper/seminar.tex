@@ -5,6 +5,9 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{url}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{lipsum}
 \usetikzlibrary{shapes,arrows}
 
 \input{config/newcommand}
@@ -16,7 +19,7 @@
 %\semcover{Make studies great again!}
 \semcover{A structured approach to Evidence-based software engineering in empirical software engineering research for students}
 	{M. Danz, T. Gr\"af, C. Michel}
-	{\todo{Mails}student@student.kit.edu}
+	{\todo{Mails}student@student.kit.edu, danz@teco.edu}
 	{Andrei Miclaus}
 	{miclaus@teco.edu}
 
@@ -37,13 +40,16 @@ Final TODOs:\\
 \input{chapter/abstract/abstract}
 
 \input{chapter/introduction/introduction}
-	
+
+\newpage
 \input{chapter/related_work/related_work}
-	
+
+\newpage
 \input{chapter/fundamental_principles/fundamental_principles}
 	\input{chapter/fundamental_principles/ebse}
 	\input{chapter/fundamental_principles/structured_abstract}
 
+\newpage
 \input{chapter/workflow/workflow}
 	\input{chapter/workflow/scientific_method}
 	\input{chapter/workflow/formulate_question_hypothesis}
@@ -56,6 +62,7 @@ Final TODOs:\\
 	\input{chapter/workflow/study_discussion}
 	\input{chapter/workflow/process_evaluation}
 
+\newpage
 \input{chapter/briefing_form/briefing_form}
 	%\input{chapter/briefing_form/form}
 	\input{chapter/briefing_form/question_and_hypothesis}
@@ -68,10 +75,12 @@ Final TODOs:\\
 		\input{chapter/briefing_form/statistic_results}
 	\input{chapter/briefing_form/conclusion_description}
 
+\newpage
 \input{chapter/discussion/discussion}
 
 %\bibliographystyle{splncs03}%
 \bibliographystyle{alpha}%
 \bibliography{seminar}%
 
+\todo{append \briefingform and \checklist}
 \end{document}
