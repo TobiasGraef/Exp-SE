@@ -1,0 +1,45 @@
+- Begruessung und Vorstellung
+- Urspruengliches Thema: Empirie und Experimentierung in der Software-Technik
+	- Wie gut funktionieren Software-Engineering Prozesse?
+	- Wie gut sind meine Architekturen und SWT-Konzepte?
+	- Wie kann ich die Software, die ich baue, evaluieren?
+	-> Methodik etwickeln, um Software zu evaluieren und diese an einer existierenden Software erproben 
+- Research betrieben und Probleme gefunden
+	- gute Frage
+	- Evidenz evaluieren
+	-> Studenten fehlt die Expertise
+- Frage abgeandert
+	-Studenten unterstuetzen wissenschaftlicher zu arbeiten und Experiemten zu designen
+- Research betrieben Tools gefunden
+	- EBSE
+	- Scientific Method
+	-> nicht fuer Studenten geeignet
+- EBSE PRrozess als Grundlage
+	- Schritte nennen
+	- daraus entstand unser bunter Graph
+- Laesst sich auf Scientific Method mappen
+	-> Focus hier auf Fragengenerierung, bei uns auf Durchfuehrung
+		- weil Aufgaben an Studenten anderst gestellt 
+- Erstes Dokument - Checklist
+	- links flow chart 
+	- rechts Beschreibungen
+	- Farben fuer Wiedererkennung
+- Details bestehen aus:
+	- Beschreibung
+	- Richtlinien und Tools (z.B. PICOT, FINER)
+	- Acceptance Criteria zum abhaken
+	-> zugeschnitten auf Computer Science/ Software-Engineering Studenten
+- Letzte Seite die wichtigsten Tools
+- Zweites Dokument - Briefing Form
+	- Analoges Konzept zu digitaler Ausfuehrung
+	- Schablone fuer die Paper Zusammenfassung
+	- Hilfestellung um beim Experiemt Design nichts zu vergessen
+	- Soll die Suche nach bestehenden Arbeiten leichter machen
+	- Wieder in den selben Farben gehalten
+- Diskussion
+	- Briefing Form soll in eine digitale Form gefasst werden um wirklich wirksam zu sein 
+		-> Thema fehlende Infrastruktur
+		- SEED so aehnlich aber nicht brauchbar
+	- Alles muss noch evaluiert werden mit Bachelor/Master Arbeiten
+		- Checkliste muss getestet werden ob benutzbar
+		- Breifing Form muss verfeinert werden
