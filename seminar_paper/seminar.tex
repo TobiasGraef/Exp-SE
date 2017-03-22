@@ -10,6 +10,7 @@
 \usepackage{lipsum}
 \usepackage{colortbl}
 \usetikzlibrary{shapes,arrows}
+\usepackage{pdfpages}
 
 \input{config/newcommand}
 \input{config/hyphenation}
@@ -82,6 +83,11 @@ Final TODOs:\\
 %\bibliographystyle{splncs03}%
 \bibliographystyle{alpha}%
 \bibliography{seminar}%
-
-\todo{append \briefingform and \checklist}
+\newpage
+\appendix
+\section{\checklist}
+\includepdf[pages={1-4}]{../checklist/checklist_layout.pdf}
+\section{\briefingform}
+\includepdf[pages={1}]{../briefing_form/briefing_form_layout.pdf}
 \end{document}
+
