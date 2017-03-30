@@ -46,11 +46,11 @@
 \author{#2$^{*}$\\ \vspace*{.5em} \small{Advisor:~#4$^{\dag}$}}%
 \institute{Karlsruhe Institute of Technology (KIT)\\ Pervasive Computing Systems -- TECO\\ $^{*}$\url{#3}\\ $^{\dag}$\url{#5}}%
 \fi%
-%\maketitle%
+\maketitle%
 }
 
 \newcommand{\sembib}[1]{%
-%\bibliographystyle{splncs03}%
+\bibliographystyle{splncs03}%
 \bibliography{#1}%
 }
 

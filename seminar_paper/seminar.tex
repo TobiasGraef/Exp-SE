@@ -22,23 +22,7 @@
 	{danz@teco.edu, tobias.graef@student.kit.edu, michel@teco.edu}
 	{Andrei Miclaus}
 	{miclaus@teco.edu}
-{\def\addcontentsline#1#2#3{}\maketitle}
-
-\newpage
 \input{chapter/abstract/abstract}
-
-\newpage
-\setcounter{tocdepth}{3}
-\tableofcontents
-
-\newpage
-Final TODOs:\\
-\todo{check for broken quotes}\\
-\todo{check figure references}\\
-\todo{check section references}\\
-\todo{fix ToC chapter }\\
-\todo{add appendix and reference to it}\\
-\todo{check for first term occurence with using italic text}
 
 \newpage
 \input{chapter/introduction/introduction}
@@ -80,14 +64,28 @@ Final TODOs:\\
 \newpage
 \input{chapter/discussion/discussion}
 
-%\bibliographystyle{splncs03}%
-\bibliographystyle{alpha}%
-\bibliography{seminar}%
+\sembib{seminar}
 \newpage
 \appendix
 \section{\checklist}
 \includepdf[pages={1-4}]{../checklist/checklist_layout.pdf}
+\label{appendix:checklist}
 \section{\briefingform}
+\label{appendix:briefingform}
 \includepdf[pages={1}]{../briefing_form/briefing_form_layout.pdf}
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
